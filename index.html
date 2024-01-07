@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/output.css">
+    <script src="lib/jquery-3.6.3.min.js"></script>
+    <title>Aaroud</title>
+</head>
+<body>
+    <nav class="w-full min-h-[5vh] bg-[#8CDDB8] flex justify-between items-center py-2">
+        <div class="w-[30%] text-center"><a href="#" class="underline underline-offset-8">الخدمات</a></div>
+        <div class="w-[30%] flex justify-center items-center "><img  src="img/logo.svg" class="w-[60%] mt-[-1.8vh]" alt=""></div>
+        <div class="w-[30%] text-center"><a href="#" class="underline underline-offset-8">الرئيسية</a></div>
+    </nav>
+    <!-- bg-[#8CDDB8] -->
+    <section class="w-full min-h-[90vh] bg-bohor-bg bg-cover bg-center relative" >
+        <div class="w-full min-h-[62vh]  bg-auto  bg-no-repeat flex justify-center items-center">
+                <div class="w-full min-h-[30vh]  bg-[#00000075] flex items-center">
+                    <p class="text-white font-extrabold text-5xl text-center ">تحديد البحور لم يعد صعبا بعد الان</p>
+                </div>
+                
+        </div>
+        <div class="w-full mx-auto flex items-center justify-evenly ">
+            <button class="bg-[#39f532bb] px-5 py-2 rounded-md text-lg font-bold text-white" id="guide">كبفية الاستعمال</button>
+            <button class="bg-[#1eb319] px-5 py-2 rounded-md text-lg font-bold text-white" id="determine_bahr">حدد البحر</button>
+        </div>
+
+       
+    </section>
+    <div class="absolute top-0 w-full min-h-[110vh] bg-[#0000004d] flex items-center justify-center    hidden" id="overlay">
+        <div class=" relative w-[90%] h-[80vh] bg-[#8CDDB8] rounded-md flex justify-center items-center main-container">
+           <img src="img/close.png" class="w-[15px] absolute top-2 right-2" alt="X" id="close">
+           <div class="text-center   hidden" id="content1">
+            <h1 class="text-3xl font-extrabold underline underline-offset-4 my-7">طريقة استعمال</h1>
+            <h2 class="text-2xl font-extrabold text-[#5e5b5b] underline underline-offset-3 py-2">خطوة الاولئ  </h2>
+            <p >«اكتب البيت كتابة عروضية»</p>
+            <h2 class="text-2xl font-extrabold text-[#5e5b5b] underline underline-offset-3 py-2">خطوة الثانية   </h2>
+            <p >«اشكل البيت كاملا»</p>
+            <h1 class="text-3xl font-extrabold underline underline-offset-4 my-7">ملاحظة</h1>
+            <p class="mx-2">
+                التطبيق مزال في مراحله الاولى لذلك المرجوا التواصل معنا في حالة حدوث اي خطا او من اجل اقتراح اضافات جديدة  </p>
+           </div>
+           <div class=" hidden " id="content2">
+            <h1 class="text-3xl font-extrabold underline underline-offset-4 my-5 text-center">ادخل البيت هنا</h1>
+
+            <p class="text-xl font-semibold text-end my-2"> : الصدر </p>
+            <input class="w-[80vw] rounded-sm my-2 py-2 px-2 placeholder:text-end " name="sadr" placeholder="... اكتب هنا" id="sadr"></input>
+            <p class="text-xl font-semibold text-end my-2"> : العجوز </p>
+            <input class="w-[80vw] rounded-sm my-2 py-2 px-2  placeholder:text-end" name="ajoz" placeholder="... اكتب هنا" id="ajoz"></input>
+            <!-- <button class=" py-2 bg-[#8CDDB8] mx-au w-fit">تحديد البحر</button> -->
+            <h1 class="text-xl font-extrabold my-5 text-center bg-[#dd8c8c]  text-white border-2 w-fit mx-auto px-3 py-1 rounded-md" id="button">تحديد البحر</h1>
+
+
+           </div>
+           <div class="text-center   absolute top-7  w-[100%] hidden" id="content3">
+            <h1 class="text-3xl font-extrabold   bg-green-500 py-2 ">ثم العثور بنجاح </h1>
+            <div class="my-[0.3vh] bg-[#71dfe9] py-1" >
+                <h2  class="text-lg font-bold underline underline-offset-2">بيت</h2>
+                <p id="bayt1">-----------------</p>
+                <p id="bayt2">-----------------</p>
+            </div>
+            <div class="my-[0.3vh] bg-[#ace6eb] py-1" >
+                <h2 class="text-lg font-bold underline underline-offset-2"> (  حركة : |  , 0 : سكون) تقطيع</h2>
+                <p id="ta9ti31">-----------------</p>
+                <p id="ta9ti32">-----------------</p> 
+            </div>
+            <div class="my-[0.3vh] bg-[#71dfe9] py-1" >
+                <h2 class="text-lg font-bold underline underline-offset-2">تفعيلة</h2>
+                <p id="taf3ila1">-----------------</p>
+                <p id="taf3ila2">-----------------</p> 
+            </div>
+            <div class="my-[0.3vh] bg-[#ace6eb] py-1" >
+                <h2 class="text-lg font-bold underline underline-offset-2">الزحاف الذي دخل على حشو الشطرين</h2>
+                <p id="zi7af1">-----------------</p>
+                <p id="zi7af2">-----------------</p> 
+            </div>
+            <div class="my-[0.3vh] bg-[#71dfe9] py-1" >
+                <h2 class="text-lg font-bold underline underline-offset-2">نوع الضرب</h2>
+                <p id="darb">-----------------</p>
+            </div>
+            <div class="my-[0.3vh] bg-[#ace6eb] py-1" >
+                <h2 class="text-lg font-bold underline underline-offset-2">نوع العروض</h2>
+                <p id="3ard">-----------------</p>
+            </div>
+           
+            <div class="my-[0.3vh] bg-[#71dfe9] py-1" >
+                <h2 class="text-lg font-bold underline underline-offset-2">قافية</h2>
+                <p id="9afia">-----------------</p>
+            </div>
+            <div class="my-[0.3vh]  bg-[#ace6eb] py-1" >
+                <h2 class="text-lg font-bold underline underline-offset-2">البحر</h2>
+                <p id="bahr">-----------------</p>
+            </div>
+           </div>
+        </div>
+    </div>
+    <footer class="w-full min-h-[5] bg-[#8CDDB8] flex p-2 items-center justify-center gap-2 ">
+        <img src="img/whatsapp.png" class="max-w-[10%]" alt="whatsapp">
+        <p class="font-bold"> تواصل معنا عبر</p>
+    </footer>
+    
+    <script  src="js/bahr.js"></script> 
+    <script  src="js/app.js"></script> 
+</body>
+</html>
