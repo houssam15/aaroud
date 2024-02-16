@@ -22,6 +22,10 @@ $("#close").click(function(e){
   e.preventDefault()
   $("#overlay").addClass("hidden")
 })
+$("#close2").click(function(e){
+  e.preventDefault()
+  $("#overlay2").addClass("hidden")
+})
 
 $("#button").click(function(e){
   e.preventDefault();

@@ -11,17 +11,17 @@
 </head>
 <body>
     <nav class="w-full min-h-[5vh] bg-[#8CDDB8] flex justify-between items-center py-2">
-        <div class="w-[30%] text-center"><a href="#" class="underline underline-offset-8">الخدمات</a></div>
-        <div class="w-[30%] flex justify-center items-center "><img  src="img/logo.svg" class="w-[60%] mt-[-1.8vh]" alt=""></div>
-        <div class="w-[30%] text-center"><a href="#" class="underline underline-offset-8">الرئيسية</a></div>
+        <div class="w-[30%] text-center ms:hidden md:hidden "><a href="#" class="underline underline-offset-8 ">الخدمات</a></div>
+        <div class="w-[30%] flex justify-items-start items-center  "><img src="img/logo.svg" class="md:w-[30%] ms:w-[15%]  mt-[-1.8vh]" alt=""></div>
+        <div class="w-[30%] text-center "><a href="#" class="underline underline-offset-8">الرئيسية</a></div>
     </nav>
+    
     <!-- bg-[#8CDDB8] -->
     <section class="w-full min-h-[90vh] bg-bohor-bg bg-cover bg-center relative" >
         <div class="w-full min-h-[62vh]  bg-auto  bg-no-repeat flex justify-center items-center">
-                <div class="w-full min-h-[30vh]  bg-[#00000075] flex items-center">
-                    <p class="text-white font-extrabold text-5xl text-center ">تحديد البحور لم يعد صعبا بعد الان</p>
-                </div>
-                
+                <div class="w-full min-h-[30vh]  bg-[#00000075] flex justify-center items-center">
+                    <p class="text-white font-extrabold text-5xl text-center ">تحديد البحور لم يعد صعبا بعد الآن</p>
+                </div>               
         </div>
         <div class="w-full mx-auto flex items-center justify-evenly ">
             <button class="bg-[#39f532bb] px-5 py-2 rounded-md text-lg font-bold text-white" id="guide">كبفية الاستعمال</button>
@@ -35,13 +35,13 @@
            <img src="img/close.png" class="w-[15px] absolute top-2 right-2" alt="X" id="close">
            <div class="text-center   hidden" id="content1">
             <h1 class="text-3xl font-extrabold underline underline-offset-4 my-7">طريقة استعمال</h1>
-            <h2 class="text-2xl font-extrabold text-[#5e5b5b] underline underline-offset-3 py-2">خطوة الاولئ  </h2>
+            <h2 class="text-2xl font-extrabold text-[#5e5b5b] underline underline-offset-3 py-2">خطوة الأولى  </h2>
             <p >«اكتب البيت كتابة عروضية»</p>
             <h2 class="text-2xl font-extrabold text-[#5e5b5b] underline underline-offset-3 py-2">خطوة الثانية   </h2>
             <p >«اشكل البيت كاملا»</p>
             <h1 class="text-3xl font-extrabold underline underline-offset-4 my-7">ملاحظة</h1>
             <p class="mx-2">
-                التطبيق مزال في مراحله الاولى لذلك المرجوا التواصل معنا في حالة حدوث اي خطا او من اجل اقتراح اضافات جديدة  </p>
+                التطبيق ما يزال في مراحلته الأولى فلذلك المرجوا التواصل معنا في حالة حدوث أي خطأ او من أجل اقتراح إضافات جديدة  </p>
            </div>
            <div class=" hidden " id="content2">
             <h1 class="text-3xl font-extrabold underline underline-offset-4 my-5 text-center">ادخل البيت هنا</h1>
@@ -56,7 +56,7 @@
 
            </div>
            <div class="text-center   absolute top-7  w-[100%] hidden" id="content3">
-            <h1 class="text-3xl font-extrabold   bg-green-500 py-2 ">ثم العثور بنجاح </h1>
+            <h1 class="text-3xl font-extrabold   bg-green-500 py-2 ">تم العتور بنجاح </h1>
             <div class="my-[0.3vh] bg-[#71dfe9] py-1" >
                 <h2  class="text-lg font-bold underline underline-offset-2">بيت</h2>
                 <p id="bayt1">-----------------</p>
@@ -68,7 +68,7 @@
                 <p id="ta9ti32">-----------------</p> 
             </div>
             <div class="my-[0.3vh] bg-[#71dfe9] py-1" >
-                <h2 class="text-lg font-bold underline underline-offset-2">تفعيلة</h2>
+                <h2 class="text-lg font-bold underline underline-offset-2">التفعيلة</h2>
                 <p id="taf3ila1">-----------------</p>
                 <p id="taf3ila2">-----------------</p> 
             </div>
@@ -87,20 +87,26 @@
             </div>
            
             <div class="my-[0.3vh] bg-[#71dfe9] py-1" >
-                <h2 class="text-lg font-bold underline underline-offset-2">قافية</h2>
+                <h2 class="text-lg font-bold underline underline-offset-2">القافية</h2>
                 <p id="9afia">-----------------</p>
             </div>
             <div class="my-[0.3vh]  bg-[#ace6eb] py-1" >
-                <h2 class="text-lg font-bold underline underline-offset-2">البحر</h2>
+                <h2 class="text-lg font-bold underline underline-offset-2">بحر</h2>
                 <p id="bahr">-----------------</p>
             </div>
            </div>
         </div>
     </div>
-    <footer class="w-full min-h-[5] bg-[#8CDDB8] flex p-2 items-center justify-center gap-2 ">
-        <img src="img/whatsapp.png" class="max-w-[10%]" alt="whatsapp">
-        <p class="font-bold"> تواصل معنا عبر</p>
+    <footer class="w-full min-h-[5] bg-[#8CDDB8] relative">
+     <div class="fixed  bottom-[30%] right-[-25%]  " id="overlay2"> <img src="img/close.png" class="w-[15px]  top-2 right-2" alt="X" id="close2">
+         <a href="https://whatsapp.com/channel/0029Va8ou0gEKyZKSu3iys2A" >
+            
+             <p class="font-bold"> تواصل معنا عبر</p>
+             <img src="img/whatsapp.png" class="max-w-[10%]" alt="whatsapp">
+            </a> 
+    </div>   
     </footer>
+    
     
     <script  src="js/bahr.js"></script> 
     <script  src="js/app.js"></script> 
