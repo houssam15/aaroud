@@ -8,6 +8,13 @@ $('#guide').click(function(e){
   $("#content2").addClass("hidden")
   $("#content3").addClass("hidden")
 })
+$('#guide2').click(function(e){
+  e.preventDefault()
+  $('#overlay2').removeClass("hidden")
+  $("#content1").removeClass("hidden")
+  $("#content2").addClass("hidden")
+  $("#content3").addClass("hidden")
+})
 
 $("#determine_bahr").click(function(e){
   e.preventDefault()
@@ -30,7 +37,10 @@ $("#close2").click(function(e){
 $("#button").click(function(e){
   e.preventDefault();
   if($("#sadr").val()=="" || $("#ajoz").val()==""){
-    alert("املء الخانة الفارغة !!")
+    alert("  املأ الخانة الفارغة :أو أنظر إلى كيفية الاستعمال !!");
+    e.preventDefault();
+    $("#overlay2").removeClass("hidden");
+  $("#overlay2").addClass("block");
   }else{
       const e1 = send($("#sadr").val());
       const e2 = send($("#ajoz").val(),true);
